@@ -1,0 +1,13 @@
+{
+  "name": "cakebaker",
+  "version": "1.0.0",
+  "description": "alexa helps you bake a cake!",
+  "main": "index.js",
+  "author": "josh skeen",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-app": "^2.3.2",
+    "dynasty": "^0.2.4",
+    "lodash": "^4.3.0"
+  }
+}
