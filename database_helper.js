@@ -4,6 +4,9 @@ var _ = require('lodash');
 var CAKEBAKER_DATA_TABLE_NAME = 'cakeBakerData';
 var dynasty = require('dynasty')({});
 
+var localDynasty = require('dynasty')(localCredentials, localUrl);
+var dynasty = localDynasty;
+
 function CakeBakerHelper() {}
 var cakeBakerTable = function() {
   return dynasty.table(CAKEBAKER_DATA_TABLE_NAME);
@@ -14,9 +17,7 @@ CakeBakerHelper.prototype.createCakeBakerTable = function() {
     .catch(function(error) {
       return dynasty.create(CAKEBAKER_DATA_TABLE_NAME, {
         key_schema: {
-          hash: ['userId',
-            'string'
-          ]
+          hash: ['userId', 'string']
         }
       });
     });
