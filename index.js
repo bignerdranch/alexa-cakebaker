@@ -42,6 +42,7 @@ skillService.intent('advanceStepIntent', {
   function(request, response) {
     var cakeBakerHelper = getCakeBakerHelperFromRequest(request);
     cakeBakerHelper.currentStep++;
+    saveCake(cakeBakerHelper, request);
     cakeBakerIntentFunction(cakeBakerHelper, request, response);
   }
 );
