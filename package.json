@@ -6,7 +6,7 @@
   "author": "josh skeen",
   "license": "ISC",
   "dependencies": {
-    "alexa-app": "^2.3.2",
+    "alexa-app": "^3.1.0",
     "dynasty": "^0.2.4",
     "lodash": "^4.3.0"
   }
